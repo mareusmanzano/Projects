@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTBCServiceStatusDashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav class="pnav" aria-label="Primary">
+      <a href="../index.html#projects">← Back to projects</a>
+    </nav>
+
+    <header class="phero">
+      <span class="phero__tag">Web App</span>
+      <h1>CTBCServiceStatusDashboard</h1>
+      <p class="phero__sub">
+        The CTBC Service Status Dashboard is a centralized Web Monitoring
+        Application designed to deliver real-time operational visibility across
+        enterprise sites and servers. By executing automated system health
+        checks at 5-minute intervals, the platform provides precise tracking of
+        infrastructure uptime, instantly identifying active and inactive
+        services to maintain continuous service availability.
+      </p>
+    </header>
+
+    <div class="pbanner">
+      <div class="carousel">
+        <div class="carousel__track">
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC1.png"
+              alt="Apollo 1"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC2.png"
+              alt="Apollo 2"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC3.png"
+              alt="Apollo 3"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC4.png"
+              alt="Apollo 4"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC5.png"
+              alt="Apollo 5"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC6.png"
+              alt="Apollo 6"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC7.png"
+              alt="Apollo 7"
+              class="carousel__img"
+            />
+          </div>
+          <div class="carousel__slide active">
+            <img
+              src="../images/CTBC/CTBC8.png"
+              alt="Apollo 8"
+              class="carousel__img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pmeta">
+      <div class="pmeta__block">
+        <strong>Role</strong><span> Back end developer and Database Manager</span>
+      </div>
+      <div class="pmeta__block">
+        <strong>Timeline</strong><span>13 weeks, 2026</span>
+      </div>
+      <div class="pmeta__block">
+        <strong>Stack</strong><span>C#, Python, MSSQL, Oracle Cloud Infrastructure</span>
+      </div>
+      <div class="pmeta__block">
+        <strong>Status</strong><span>Done</span>
+      </div>
+    </div>
+
+    <main class="pbody">
+      <h2>Overview</h2>
+      <p>
+        A centralized web app that monitors the operational status of enterprise sites and servers, providing real-time visibility into system health and service availability.
+      </p>
+
+      <h2>The problem</h2>
+      <p>
+        System admins often struggle to keep track of the operational status of multiple enterprise sites and servers. Manual checks are time-consuming and prone to error, leading to delayed responses to service disruptions. Mainly the previous web app is only based on frontend and most of it is hard coded and doesn't have a database to store the data.
+      </p>
+
+      <h2>What I built</h2>
+      <p>
+        Engineered an enterprise service status dashboard featuring a custom Flask backend, MSSQL database, and Oracle Cloud Infrastructure deployment. Assisted in building the C# frontend and handled cross-stack integration via RESTful API calls. The solution automates system health monitoring on 5-minute cycles, delivering precise uptime metrics and instant visibility into service availability.
+      </p>
+
+      <h2>What I learned</h2>
+      <p>
+        Working on this enterprise status dashboard provided me with my first hands-on experience in a professional corporate environment. Building a Flask API backend connected to MSSQL and deployed on Oracle Cloud Infrastructure taught me how to design robust, production-ready server architectures tailored to specific client requirements. On the client side, assisting with the C# frontend and wiring up the end-to-end integration via REST API calls gave me a practical understanding of full-stack data flow. Most importantly, implementing automated 5-minute health check routines deepened my knowledge of real-time monitoring, service uptime tracking, and building resilient systems that maintain continuous service availability.
+      </p>
+    </main>
+
+    <nav class="pswitch">
+      <a class="prev" href="Apollo.html"
+        ><span class="lbl">← Previous</span>Apollo</a
+      >
+      <a class="next" href="tablescraps.html"
+        ><span class="lbl">Next →</span>Tablescraps</a
+      >
+    </nav>
+
+    <footer style="margin-top: 70px">
+      designed &amp; built by Mareus Manzano · © <span id="year"></span>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="../carousel.js"></script>
+
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox__close">&times;</span>
+      <button
+        class="lightbox__nav lightbox__nav--prev"
+        aria-label="Previous image"
+      >
+        &#10094;
+      </button>
+      <img class="lightbox__content" id="lightbox-img" alt="Enlarged view" />
+      <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+        &#10095;
+      </button>
+    </div>
+  </body>
+</html>
